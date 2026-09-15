@@ -1,1 +1,319 @@
-This is test page.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoha Haider | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0021A5 0%, #FA4616 100%);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    header p.tagline {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 4px;
+    }
+
+    header p.school {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      font-style: italic;
+    }
+
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0021A5;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #FA4616;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: #0021A5;
+      border-bottom: 3px solid #FA4616;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* About */
+    .about-text {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 700px;
+    }
+
+    /* Resume */
+    .resume-link {
+      display: inline-block;
+      background: #0021A5;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .resume-link:hover {
+      background: #FA4616;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(135deg, #0021A5, #FA4616);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-thumb svg {
+      width: 48px;
+      height: 48px;
+      fill: rgba(255,255,255,0.85);
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .card-body h3 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+      color: #222;
+    }
+
+    .card-body p {
+      font-size: 0.88rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .card-body a {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #0021A5;
+      text-decoration: none;
+      border: 2px solid #0021A5;
+      padding: 5px 14px;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .card-body a:hover {
+      background: #0021A5;
+      color: white;
+    }
+
+    /* Links section */
+    .links-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .links-list a {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: white;
+      color: #0021A5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 2px solid #0021A5;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .links-list a:hover {
+      background: #0021A5;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      background: #222;
+      color: #aaa;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zoha Haider</h1>
+    <p class="tagline">Computer Science Student &amp; Aspiring Software Engineer</p>
+    <p class="school">Sophomore &middot; University of Florida &middot; Class of 2027</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="about-text">
+        Hi! I'm Zoha, a sophomore studying Computer Science at the University of Florida.
+        I'm passionate about software development, machine learning, and building projects
+        that make a real impact. When I'm not coding, you'll find me exploring new technologies
+        and collaborating on creative ideas.
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p style="margin-bottom: 16px; color: #555;">Download or view my latest resume below.</p>
+      <a class="resume-link" href="resume.pdf" target="_blank">View Resume (PDF)</a>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="card">
+          <div class="card-thumb">
+            <!-- YouTube play icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.6 5 12 5 12 5s-4.6 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.2.8C6.6 19 12 19 12 19s4.6 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.8 14.5V9l5.4 2.8-5.4 2.7z"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p>A brief description of this project and the technologies used.</p>
+            <a href="https://www.youtube.com/watch?v=REPLACE_ME" target="_blank">Watch on YouTube</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.6 5 12 5 12 5s-4.6 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.2.8C6.6 19 12 19 12 19s4.6 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.8 14.5V9l5.4 2.8-5.4 2.7z"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p>A brief description of this project and the technologies used.</p>
+            <a href="https://www.youtube.com/watch?v=REPLACE_ME" target="_blank">Watch on YouTube</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb">
+            <!-- Code icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Project Three</h3>
+            <p>A brief description of this project and the technologies used.</p>
+            <a href="https://github.com/REPLACE_ME" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="links">
+      <h2>Find Me Online</h2>
+      <ul class="links-list">
+        <li><a href="https://github.com/REPLACE_ME" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/REPLACE_ME" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@REPLACE_ME" target="_blank">YouTube</a></li>
+        <li><a href="mailto:REPLACE_ME@ufl.edu">Email Me</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Zoha Haider &middot; University of Florida
+  </footer>
+
+</body>
+</html>
